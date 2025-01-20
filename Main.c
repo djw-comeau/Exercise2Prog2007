@@ -2,11 +2,18 @@
 // Course: PROG2007 - Introduction to C
 // Assignment: Exercise 2
 // Instructor: Nadia Gouda
-// Date: Januaru 13, 2025
-
+// Date: January 17, 2025
+// Sources Used
+// https://labex.io/tutorials/c-circle-area-and-circumference-in-c-123197
+// https://www.w3schools.com/c/c_constants.php
+// https://www.w3schools.com/c/c_variables_change.php
+// https://www.geeksforgeeks.org/g-fact-41-setting-decimal-precision-in-c/
+// Why did we write this code? This code is to demonstrate the following:
+// Use Floating-Point Numbers
+// Demonstrate Type Conversion
+// Use Scientific Notation
 
 #include <stdio.h>
-#define pi 3.14
 
 int main()
 
@@ -17,7 +24,7 @@ int main()
     int circumference_int; // We're declaring a new variable to store the integer value.
     const double planck_constant = 6.626070151e-34; // We're declaring Planck's Constant. 
      
-    // Input the radius of the rircle
+    // Input the radius of the circle
     printf("Enter the radius of the circle: ");
     scanf("%f", &radius);
 
@@ -29,8 +36,9 @@ int main()
     circumference_int = (int)circumference;
 
     // Printing our results!
+    printf("\nArea of Circle: %.2f", area);
     printf("\nRadius of Circle: %.2f", radius);
-    printf("\nCircumference of Circle (float): %.2f", circumference);
+    printf("\nCircumference of Circle (float): %.3f", circumference);
     printf("\nCircumference of Circle (int): %d", circumference_int);
     printf("\nPlanck's Constant: %e\n", planck_constant);
 
